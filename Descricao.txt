@@ -24,3 +24,21 @@ RegistrarCompraCommandHandler
 No projeto SistemaCompras.API, crie a controller de SolicitacaoCompra 1,0 
 
 Crie o método necessário utilizando o command criado no projeto SistemaCompras.Application. 1,5 
+
+// PAYLOAD
+{
+  "nomeSolicitante": "Daneris",
+  "nomeFornecedor": "John Snow Targherian",
+  "itens": [
+    {
+      "nome": "Cedro",
+      "descricao": "Transversal 3/3",
+      "categoria": "1",
+      "preco": 60000,
+      "qtd": 1
+    }
+  ]
+}
+
+CONNECTION STRING
+.UseSqlServer(@"Data Source=DESKTOP-GHIJATD;Initial Catalog=dbTeste;Integrated Security=True");
